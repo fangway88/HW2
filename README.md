@@ -1,2 +1,1 @@
-HW2
-===
+Total Hours Spent: 2.5
