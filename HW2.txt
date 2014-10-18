@@ -1,0 +1,308 @@
+HelloWorld_uvision_lpc1768
+65 total files (13259 lines)
+7 binary files (2856 lines)
+58 text files (10403 lines)
+Entry Point Address: 0x0
+
+HelloWorld_gcc_arm_lpc1768
+63 total files (11361 lines)
+6 binary files (1397 lines)
+57 text files (9964 lines)
+Entry Point Address: 0x0
+
+13 Different files:
+startup_LPC17xx.o
+capi.ar
+system_LPC17xx.o
+cmsis_nvic.o
+mbed.ar
+libmbed.a
+LPC1768.ld
+LPC1768.sct
+libcapi.a
+sys.o
+Makefile
+HelloWorld.uvopt
+HelloWorld.uvproj
+
+
+wayne@wayne-VirtualBox:~/embedded_firmware/HW2/HelloWorld_uvision_lpc1768/HelloWorld/mbed/LPC1768/ARM$ binwalk mbed.ar
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+25546         0x63CA          ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+30020         0x7544          Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/std"
+30385         0x76B1          Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+30443         0x76EB          Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+30489         0x7719          Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+30539         0x774B          Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+35947         0x8C6B          LZMA compressed data, properties: 0x5D, dictionary size: 1048576 bytes, missing uncompressed size
+39661         0x9AED          Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/stdio.cpp"
+40854         0x9F96          LZMA compressed data, properties: 0x99, dictionary size: 16777216 bytes, uncompressed size: 100663296 bytes
+48074         0xBBCA          ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+52208         0xCBF0          Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Bus"
+52579         0xCD63          Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+52637         0xCD9D          Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+52683         0xCDCB          Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+52733         0xCDFD          Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+61973         0xF215          Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/BusInOut.cpp"
+62806         0xF556          LZMA compressed data, properties: 0x65, dictionary size: 16777216 bytes, uncompressed size: 100663296 bytes
+69346         0x10EE2         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+69940         0x11134         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Por"
+70309         0x112A5         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+70367         0x112DF         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+70413         0x1130D         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+70463         0x1133F         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+71970         0x11922         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/PortOut.cpp"
+72346         0x11A9A         LZMA compressed data, properties: 0x64, dictionary size: 16777216 bytes, uncompressed size: 100663296 bytes
+73246         0x11E1E         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+76300         0x12A0C         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Bus"
+76665         0x12B79         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+76723         0x12BB3         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+76769         0x12BE1         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+76819         0x12C13         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+83427         0x145E3         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/BusIn.cpp"
+88562         0x159F2         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+92344         0x168B8         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Bus"
+92711         0x16A27         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+92769         0x16A61         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+92815         0x16A8F         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+92865         0x16AC1         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+96627         0x17973         LZMA compressed data, properties: 0x5D, dictionary size: 262144 bytes, missing uncompressed size
+101211        0x18B5B         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/BusOut.cpp"
+101910        0x18E16         LZMA compressed data, properties: 0x63, dictionary size: 16777216 bytes, uncompressed size: 100663296 bytes
+107850        0x1A54A         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+109272        0x1AAD8         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Tim"
+109647        0x1AC4F         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+109705        0x1AC89         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+109751        0x1ACB7         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+109801        0x1ACE9         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+113507        0x1BB63         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/TimerEvent.cpp"
+116614        0x1C786         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+117876        0x1CC74         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/SPI"
+118247        0x1CDE7         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+118305        0x1CE21         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+118351        0x1CE4F         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+118401        0x1CE81         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+122221        0x1DD6D         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/SPISlave.cpp"
+125322        0x1E98A         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+129268        0x1F8F4         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/SPI"
+129629        0x1FA5D         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+129687        0x1FA97         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+129733        0x1FAC5         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+129783        0x1FAF7         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+138964        0x21ED4         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/SPI.cpp"
+146166        0x23AF6         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+150916        0x24D84         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Pwm"
+151283        0x24EF3         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+151341        0x24F2D         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+151387        0x24F5B         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+151437        0x24F8D         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+163395        0x27E43         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/PwmOut.cpp"
+172794        0x2A2FA         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+176536        0x2B198         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Dig"
+176915        0x2B313         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+176973        0x2B34D         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+177019        0x2B37B         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+177069        0x2B3AD         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+186478        0x2D86E         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/DigitalInOut.cpp"
+193566        0x2F41E         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+195604        0x2FC14         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/CAN"
+195965        0x2FD7D         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+196023        0x2FDB7         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+196069        0x2FDE5         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+196119        0x2FE17         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+201538        0x31342         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/CAN.cpp"
+206062        0x324EE         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+208996        0x33064         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Dig"
+209369        0x331D9         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+209427        0x33213         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+209473        0x33241         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+209523        0x33273         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+216614        0x34E26         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/DigitalIn.cpp"
+222118        0x363A6         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+225280        0x37000         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Dig"
+225655        0x37177         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+225713        0x371B1         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+225759        0x371DF         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+225809        0x37211         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+233444        0x38FE4         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/DigitalOut.cpp"
+239230        0x3A67E         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+240324        0x3AAC4         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/SPI"
+240705        0x3AC41         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+240763        0x3AC7B         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+240809        0x3ACA9         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+240859        0x3ACDB         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+244178        0x3B9D2         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/SPIHalfDuplex.cpp"
+246514        0x3C2F2         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+247100        0x3C53C         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Por"
+247467        0x3C6AB         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+247525        0x3C6E5         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+247571        0x3C713         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+247621        0x3C745         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+249171        0x3CD53         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/PortIn.cpp"
+249426        0x3CE52         LZMA compressed data, properties: 0xC0, dictionary size: 16777216 bytes, uncompressed size: 100663296 bytes
+249546        0x3CECA         LZMA compressed data, properties: 0x88, dictionary size: 16777216 bytes, uncompressed size: 100663296 bytes
+250486        0x3D276         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+252100        0x3D8C4         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/I2C"
+252461        0x3DA2D         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+252519        0x3DA67         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+252565        0x3DA95         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+252615        0x3DAC7         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+257056        0x3EC20         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/I2C.cpp"
+260926        0x3FB3E         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+264680        0x409E8         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Tim"
+265045        0x40B55         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+265103        0x40B8F         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+265149        0x40BBD         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+265199        0x40BEF         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+275247        0x4332F         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/Timer.cpp"
+283018        0x4518A         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+287448        0x462D8         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Str"
+287815        0x46447         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+287873        0x46481         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+287919        0x464AF         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+287969        0x464E1         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+298656        0x48EA0         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/Stream.cpp"
+299350        0x49156         LZMA compressed data, properties: 0x63, dictionary size: 16777216 bytes, uncompressed size: 100663296 bytes
+307490        0x4B122         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+309268        0x4B814         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Int"
+309645        0x4B98D         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+309703        0x4B9C7         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+309749        0x4B9F5         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+309799        0x4BA27         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+314614        0x4CCF6         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/InterruptIn.cpp"
+318250        0x4DB2A         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+318744        0x4DD18         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/rpc"
+319105        0x4DE81         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+319163        0x4DEBB         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+319209        0x4DEE9         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+319259        0x4DF1B         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+320469        0x4E3D5         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/rpc.cpp"
+321370        0x4E75A         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+321518        0x4E7EE         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Tim"
+321623        0x4E857         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+321681        0x4E891         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+321727        0x4E8BF         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+321777        0x4E8F1         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+321868        0x4E94C         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/Timeout.cpp"
+324092        0x4F1FC         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/Timeout.cpp"
+325762        0x4F882         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+328944        0x504F0         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Loc"
+329329        0x50671         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+329387        0x506AB         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+329433        0x506D9         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+329483        0x5070B         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+338934        0x52BF6         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/LocalFileSystem.cpp"
+346510        0x5498E         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+347364        0x54CE4         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Por"
+347737        0x54E59         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+347795        0x54E93         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+347841        0x54EC1         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+347891        0x54EF3         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+348221        0x5503D         mcrypt 2.2 encrypted data, algorithm: blowfish-448, mode: CBC, keymode: 8bit
+350080        0x55780         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/PortInOut.cpp"
+350590        0x5597E         LZMA compressed data, properties: 0x8B, dictionary size: 16777216 bytes, uncompressed size: 100663296 bytes
+352010        0x55F0A         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+355640        0x56D38         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Bas"
+356003        0x56EA3         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+356061        0x56EDD         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+356107        0x56F0B         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+356157        0x56F3D         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+359336        0x57BA8         LZMA compressed data, properties: 0x5D, dictionary size: 131072 bytes, missing uncompressed size
+365615        0x5942F         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/Base.cpp"
+366250        0x596AA         LZMA compressed data, properties: 0x93, dictionary size: 16777216 bytes, uncompressed size: 100663296 bytes
+373230        0x5B1EE         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+378724        0x5C764         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Ser"
+379091        0x5C8D3         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+379149        0x5C90D         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+379195        0x5C93B         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+379245        0x5C96D         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+392559        0x5FD6F         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/Serial.cpp"
+402574        0x6248E         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+402810        0x6257A         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Tic"
+402914        0x625E2         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+402972        0x6261C         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+403018        0x6264A         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+403068        0x6267C         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+403159        0x626D7         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/Ticker.cpp"
+406030        0x6320E         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/Ticker.cpp"
+408178        0x63A72         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+409508        0x63FA4         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Ser"
+409895        0x64127         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+409953        0x64161         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+409999        0x6418F         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+410049        0x641C1         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+411101        0x645DD         mcrypt 2.2 encrypted data, algorithm: blowfish-448, mode: CBC, keymode: 8bit
+414540        0x6534C         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/SerialHalfDuplex.cpp"
+416918        0x65C96         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+418400        0x66260         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/I2C"
+418771        0x663D3         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+418829        0x6640D         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+418875        0x6643B         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+418925        0x6646D         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+423499        0x6764B         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/I2CSlave.cpp"
+427173        0x684A5         mcrypt 2.2 encrypted data, algorithm: blowfish-448, mode: CBC, keymode: 8bit
+427334        0x68546         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+428728        0x68AB8         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Eth"
+429099        0x68C2B         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+429157        0x68C65         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+429203        0x68C93         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+429253        0x68CC5         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+433580        0x69DAC         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/Ethernet.cpp"
+437090        0x6AB62         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+437286        0x6AC26         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Fun"
+437399        0x6AC97         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+437457        0x6ACD1         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+437503        0x6ACFF         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+437553        0x6AD31         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+437644        0x6AD8C         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/FunctionPointer.cpp"
+438892        0x6B26C         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/FunctionPointer.cpp"
+439110        0x6B346         LZMA compressed data, properties: 0x88, dictionary size: 16777216 bytes, uncompressed size: 100663296 bytes
+439150        0x6B36E         LZMA compressed data, properties: 0x64, dictionary size: 16777216 bytes, uncompressed size: 100663296 bytes
+439970        0x6B6A2         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+443120        0x6C2F0         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Ana"
+443491        0x6C463         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+443549        0x6C49D         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+443595        0x6C4CB         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+443645        0x6C4FD         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+447191        0x6D2D7         LZMA compressed data, properties: 0x5D, dictionary size: 524288 bytes, missing uncompressed size
+451670        0x6E456         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/AnalogIn.cpp"
+457698        0x6FBE2         ELF 32-bit LSB relocatable, ARM, version 1 (SYSV)
+461344        0x70A20         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/temp/mbed/LPC1768/ARM/Ana"
+461717        0x70B95         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build/LPC1768/ARM -I/home"
+461775        0x70BCF         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/build -I/home/emimon01/sm"
+461821        0x70BFD         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed_capi -I/home/emimon0"
+461871        0x70C2F         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed -DTARGET_LPC1768 -DT"
+470994        0x72FD2         Unix home path string: "/home/emimon01/smb/work/mbed/emilmont/mbed/AnalogOut.cpp"
+
+
+wayne@wayne-VirtualBox:~/embedded_firmware/HW2/HelloWorld_uvision_lpc1768/HelloWorld/mbed/LPC1768/ARM$ objdump -t sys.o
+
+sys.o:     file format elf32-little
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 /home/emimon01/smb/work/mbed/emilmont/cmsis/LPC1768/ARM/sys.cpp
+00000000 l       i.__user_setup_stackheap	00000000 $t
+0000000a l       i.__user_setup_stackheap	00000000 $d
+00000000 l    d  i.__user_setup_stackheap	00000000 i.__user_setup_stackheap
+00000000 l       *ABS*	00000000 BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$REQ8$PRES8$EABIv2
+00000000 l     O .debug_frame	00000000 __ARM_grp_.debug_frame$5
+00000001 g     F i.__user_setup_stackheap	0000000a .hidden __user_setup_stackheap
+00000000       O *UND*	00000000 .hidden Image$$RW_IRAM1$$ZI$$Limit
+00000000  w    F *UND*	00000000 .hidden Lib$$Request$$armlib
+00000000  w    F *UND*	00000000 .hidden Lib$$Request$$cpplib
+
+
+wayne@wayne-VirtualBox:~/embedded_firmware/HW2/HelloWorld_uvision_lpc1768/HelloWorld/mbed/LPC1768/ARM$ nm sys.o
+00000000 N __ARM_grp_.debug_frame$5
+00000000 a BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$REQ8$PRES8$EABIv2
+0000000a t $d
+         U Image$$RW_IRAM1$$ZI$$Limit
+         w Lib$$Request$$armlib
+         w Lib$$Request$$cpplib
+00000000 t $t
+00000001 T __user_setup_stackheap
+
+
+
