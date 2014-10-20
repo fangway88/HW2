@@ -1,1 +1,1 @@
-Total Hours Spent: 2.5
+Total Hours Spent: 5
