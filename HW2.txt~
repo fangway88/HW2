@@ -87,6 +87,65 @@ wayne@wayne-VirtualBox:~/embedded_firmware/HW2/HelloWorld_uvision_lpc1768$ wc -l
     18 ./HelloWorld/.hgignore
  13259 total
 
+wayne@wayne-VirtualBox:~/embedded_firmware/HW2/HelloWorld_gcc_arm_lpc1768$ wc -l `find -name '*.h' -type f`
+    59 ./HelloWorld/mbed/mbed.h
+   127 ./HelloWorld/mbed/SPISlave.h
+   146 ./HelloWorld/mbed/PeripheralNames.h
+   134 ./HelloWorld/mbed/DigitalOut.h
+   148 ./HelloWorld/mbed/PwmOut.h
+   112 ./HelloWorld/mbed/AnalogOut.h
+    60 ./HelloWorld/mbed/LocalFileSystem.h
+   173 ./HelloWorld/mbed/Ethernet.h
+    60 ./HelloWorld/mbed/error.h
+    38 ./HelloWorld/mbed/PortNames.h
+    94 ./HelloWorld/mbed/wait_api.h
+    96 ./HelloWorld/mbed/DirHandle.h
+   188 ./HelloWorld/mbed/SerialHalfDuplex.h
+    37 ./HelloWorld/mbed/can_helper.h
+    82 ./HelloWorld/mbed/BusIn.h
+    98 ./HelloWorld/mbed/PortInOut.h
+    99 ./HelloWorld/mbed/AnalogIn.h
+   149 ./HelloWorld/mbed/InterruptIn.h
+    94 ./HelloWorld/mbed/Timer.h
+  1035 ./HelloWorld/mbed/LPC1768/GCC_ARM/LPC17xx.h
+    60 ./HelloWorld/mbed/LPC1768/GCC_ARM/system_LPC17xx.h
+   844 ./HelloWorld/mbed/LPC1768/GCC_ARM/core_cmFunc.h
+   775 ./HelloWorld/mbed/LPC1768/GCC_ARM/core_cmInstr.h
+    17 ./HelloWorld/mbed/LPC1768/GCC_ARM/cmsis.h
+  1236 ./HelloWorld/mbed/LPC1768/GCC_ARM/core_cm3.h
+    23 ./HelloWorld/mbed/LPC1768/GCC_ARM/cmsis_nvic.h
+   206 ./HelloWorld/mbed/rtc_time.h
+    97 ./HelloWorld/mbed/BusOut.h
+   118 ./HelloWorld/mbed/SPIHalfDuplex.h
+    66 ./HelloWorld/mbed/device.h
+   101 ./HelloWorld/mbed/PortOut.h
+   114 ./HelloWorld/mbed/FileHandle.h
+   155 ./HelloWorld/mbed/I2CSlave.h
+    86 ./HelloWorld/mbed/FunctionPointer.h
+   142 ./HelloWorld/mbed/I2C.h
+   102 ./HelloWorld/mbed/DigitalIn.h
+   115 ./HelloWorld/mbed/BusInOut.h
+   225 ./HelloWorld/mbed/Base.h
+   113 ./HelloWorld/mbed/SPI.h
+    86 ./HelloWorld/mbed/PortIn.h
+    45 ./HelloWorld/mbed/TimerEvent.h
+   592 ./HelloWorld/mbed/rpc.h
+   189 ./HelloWorld/mbed/Serial.h
+   108 ./HelloWorld/mbed/Timeout.h
+   245 ./HelloWorld/mbed/CAN.h
+   117 ./HelloWorld/mbed/Ticker.h
+   100 ./HelloWorld/mbed/FileSystemLike.h
+    33 ./HelloWorld/mbed/FileLike.h
+    89 ./HelloWorld/mbed/mbed_interface.h
+    12 ./HelloWorld/mbed/platform.h
+    66 ./HelloWorld/mbed/Stream.h
+   134 ./HelloWorld/mbed/DigitalInOut.h
+   254 ./HelloWorld/mbed/PinNames.h
+  9694 total
+
+
+
+
 wayne@wayne-VirtualBox:~/embedded_firmware/HW2/HelloWorld_gcc_arm_lpc1768$ wc -l `find . -type f`
     59 ./HelloWorld/mbed/mbed.h
    127 ./HelloWorld/mbed/SPISlave.h
@@ -174,15 +233,74 @@ wayne@wayne-VirtualBox:~/embedded_firmware/HW2/HelloWorld_gcc_arm_lpc1768$ wc -l
     18 ./HelloWorld/.hgignore
  11361 total
 
+wayne@wayne-VirtualBox:~/embedded_firmware/HW2/HelloWorld_gcc_arm_lpc1768$ wc -l `find -name '*.h' -type f`
+    59 ./HelloWorld/mbed/mbed.h
+   127 ./HelloWorld/mbed/SPISlave.h
+   146 ./HelloWorld/mbed/PeripheralNames.h
+   134 ./HelloWorld/mbed/DigitalOut.h
+   148 ./HelloWorld/mbed/PwmOut.h
+   112 ./HelloWorld/mbed/AnalogOut.h
+    60 ./HelloWorld/mbed/LocalFileSystem.h
+   173 ./HelloWorld/mbed/Ethernet.h
+    60 ./HelloWorld/mbed/error.h
+    38 ./HelloWorld/mbed/PortNames.h
+    94 ./HelloWorld/mbed/wait_api.h
+    96 ./HelloWorld/mbed/DirHandle.h
+   188 ./HelloWorld/mbed/SerialHalfDuplex.h
+    37 ./HelloWorld/mbed/can_helper.h
+    82 ./HelloWorld/mbed/BusIn.h
+    98 ./HelloWorld/mbed/PortInOut.h
+    99 ./HelloWorld/mbed/AnalogIn.h
+   149 ./HelloWorld/mbed/InterruptIn.h
+    94 ./HelloWorld/mbed/Timer.h
+  1035 ./HelloWorld/mbed/LPC1768/GCC_ARM/LPC17xx.h
+    60 ./HelloWorld/mbed/LPC1768/GCC_ARM/system_LPC17xx.h
+   844 ./HelloWorld/mbed/LPC1768/GCC_ARM/core_cmFunc.h
+   775 ./HelloWorld/mbed/LPC1768/GCC_ARM/core_cmInstr.h
+    17 ./HelloWorld/mbed/LPC1768/GCC_ARM/cmsis.h
+  1236 ./HelloWorld/mbed/LPC1768/GCC_ARM/core_cm3.h
+    23 ./HelloWorld/mbed/LPC1768/GCC_ARM/cmsis_nvic.h
+   206 ./HelloWorld/mbed/rtc_time.h
+    97 ./HelloWorld/mbed/BusOut.h
+   118 ./HelloWorld/mbed/SPIHalfDuplex.h
+    66 ./HelloWorld/mbed/device.h
+   101 ./HelloWorld/mbed/PortOut.h
+   114 ./HelloWorld/mbed/FileHandle.h
+   155 ./HelloWorld/mbed/I2CSlave.h
+    86 ./HelloWorld/mbed/FunctionPointer.h
+   142 ./HelloWorld/mbed/I2C.h
+   102 ./HelloWorld/mbed/DigitalIn.h
+   115 ./HelloWorld/mbed/BusInOut.h
+   225 ./HelloWorld/mbed/Base.h
+   113 ./HelloWorld/mbed/SPI.h
+    86 ./HelloWorld/mbed/PortIn.h
+    45 ./HelloWorld/mbed/TimerEvent.h
+   592 ./HelloWorld/mbed/rpc.h
+   189 ./HelloWorld/mbed/Serial.h
+   108 ./HelloWorld/mbed/Timeout.h
+   245 ./HelloWorld/mbed/CAN.h
+   117 ./HelloWorld/mbed/Ticker.h
+   100 ./HelloWorld/mbed/FileSystemLike.h
+    33 ./HelloWorld/mbed/FileLike.h
+    89 ./HelloWorld/mbed/mbed_interface.h
+    12 ./HelloWorld/mbed/platform.h
+    66 ./HelloWorld/mbed/Stream.h
+   134 ./HelloWorld/mbed/DigitalInOut.h
+   254 ./HelloWorld/mbed/PinNames.h
+  9694 total
+
+
 
 HelloWorld_uvision_lpc1768:
-54 text files: 53 .h files with 9694 lines; 1 .cpp file with 12 lines (total 9706 lines)
-7 binary files
+65 total files (13259 lines)
+7 binary files (2856 lines)
+58 text files (10403 lines)
 Entry Point Address: 0x0
 
 HelloWorld_gcc_arm_lpc1768:
-54 text files: 53 .h files with 9694 lines; 1 .cpp file with 12 lines (total 9706 lines)
-6 binary files
+63 total files (11361 lines)
+6 binary files (1397 lines)
+57 text files (9964 lines)
 Entry Point Address: 0x0
 
 
